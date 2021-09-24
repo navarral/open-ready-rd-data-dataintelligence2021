@@ -1,0 +1,73 @@
+@prefix rdfs: 			<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: 			<http://www.w3.org/2001/XMLSchema#> .
+
+@prefix eg:      		<http://example.org/ns#> .
+@prefix geo: 			<http://www.opengis.net/ont/geosparql#> .
+@prefix activity: 		<https://www.w3.org/ns/activitystreams#> .
+
+
+eg:A01 
+	a 						activity:Object ;
+	activity:name			"Definite flare event"@en ;
+	activity:location 		eg:rndPointKerryA ;
+	activity:startTime		"2014-04-01T00:00:00Z"^^xsd:dateTime ;
+	activity:attributedTo	[ activity:name "A"] ;
+	activity:startIndex		"1"^^xsd:nonNegativeInteger ;
+	.
+	
+eg:A02 
+	a 						activity:Object ;
+	activity:name			"Definite flare event"@en ;
+	activity:location 		eg:rndPointKerryA ;
+	activity:startTime		"2014-07-01T00:00:00Z"^^xsd:dateTime ;
+	activity:attributedTo	[ activity:name "A"] ;
+	activity:startIndex		"2"^^xsd:nonNegativeInteger ;
+	.
+	
+eg:rndPointKerryA
+	a				geo:Geometry ;
+	geo:asWKT		"POINT(-9.503143 52.064952)"^^geo:wktLiteral .
+	
+eg:B01 
+	a 						activity:Object ;
+	activity:name			"Definite flare event"@en ;
+	activity:location 		eg:rndPointKerryB ;
+	activity:startTime		"2014-06-01T00:00:00Z"^^xsd:dateTime ;
+	activity:attributedTo	[ activity:name "B"] ;
+	activity:startIndex		"1"^^xsd:nonNegativeInteger ;
+	.
+	
+eg:B02 
+	a 						activity:Object ;
+	activity:name			"Definite flare event"@en ;
+	activity:location 		eg:rndPointKerryB ;
+	activity:startTime		"2014-09-01T00:00:00Z"^^xsd:dateTime ;
+	activity:attributedTo	[ activity:name "B"] ;
+	activity:startIndex		"2"^^xsd:nonNegativeInteger ;
+	.
+	
+eg:B03 
+	a 						activity:Object ;
+	activity:name			"Definite flare event"@en ;
+	activity:location 		eg:rndPointKerryB ;
+	activity:startTime		"2014-12-01T00:00:00Z"^^xsd:dateTime ;
+	activity:attributedTo	[ activity:name "B"] ;
+	activity:startIndex		"3"^^xsd:nonNegativeInteger ;
+	.
+	
+eg:rndPointKerryB
+	a				geo:Geometry ;
+	geo:asWKT		"POINT(-9.582542 51.878959)"^^geo:wktLiteral .
+
+eg:C01 
+	a 						activity:Object ;
+	activity:name			"Definite flare event"@en ;
+	activity:location 		eg:rndPointKerryC ;
+	activity:startTime		"2014-11-01T00:00:00Z"^^xsd:dateTime ;
+	activity:attributedTo	[ activity:name "C"] ;
+	activity:startIndex		"1"^^xsd:nonNegativeInteger ;
+	.
+	
+eg:rndPointKerryC
+	a				geo:Geometry ;
+	geo:asWKT		"POINT(-10.266265 52.138800)"^^geo:wktLiteral .
